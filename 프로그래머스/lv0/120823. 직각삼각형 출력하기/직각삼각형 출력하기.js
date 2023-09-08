@@ -9,5 +9,5 @@ let input = [];
 rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
-    for(let i = 1; i <= +input[0]; i += 1) console.log('*'.repeat(i));
+    for(let i = 0; i < input[0]; i ++) console.log('*'.repeat(i+1));
 });
